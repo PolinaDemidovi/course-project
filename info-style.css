@@ -1,0 +1,140 @@
+      /* Добавьте дополнительные стили здесь, если необходимо */
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    .product-images {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .product-images img {
+        width: 100%;
+        max-height: calc(50% - 5px); /* высота каждой картинки - половина от общего высота блока */
+        object-fit: cover; /* для сохранения пропорций */
+        margin-bottom: 5px;
+    }
+    .product-details {
+        width: 60%;
+    }
+
+    .product-images img:hover {
+        transform: scale(0.9); /* Enlarge image on hover */
+        transition: transform 0.3s ease; /* Smooth transition */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+    
+    .product-details ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .product-details li {
+        margin-bottom: 10px;
+    }
+    
+    .product-details li span {
+        font-weight: bold;
+        width: 200px;
+        display: inline-block;
+    }
+
+    .description span{
+        width: 30px;
+    }
+    
+    /* Adjust as needed */
+    .product-details li {
+        width: 80%;
+    }
+    
+    /* Example styling */
+    .product-details li span {
+        color: #333;
+    }
+    
+    .product-details li p {
+        color: #666;
+    }
+    
+    .product-image-1 {
+        height: 100%;
+        width: 100%;
+        margin-right: 5px;
+    }
+    .product-image-2-3 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body.modal-open {
+        overflow: hidden; /* Запрет прокрутки страницы */
+    }
+
+    .modal {
+        display: none; /* Скрыть модальное окно по умолчанию */
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+        text-align: center;
+    }
+
+    .modal img {
+        max-width: 90%; /* Максимальная ширина изображения */
+        max-height: 90%; /* Максимальная высота изображения */
+        margin-top: 2%; /* Небольшое отступание сверху */
+    }
+
+    @media only screen and (max-width: 768px) {
+        .product-images {
+            width: 80%; /* Занимает всю доступную ширину */
+            flex-direction: column; /* Отображает изображения вертикально */
+        }
+        .product-images img {
+            max-height: none; /* Отменяет максимальную высоту */
+            margin-bottom: 10px; /* Увеличивает промежуток между изображениями */
+        }
+        .product-details {
+            width: 80%; /* Занимает всю доступную ширину */
+            
+            margin-left:10px;
+        }
+    }
+    
+    /* Общие стили для планшетных устройств */
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        .product-images {
+            width: 50%; /* Занимает половину доступной ширины */
+            
+        }
+        .product-images img {
+            max-height: calc(50% - 10px); /* Максимальная высота уменьшена из-за двух колонок */
+        }
+        .product-details {
+            margin-left: 10px;
+            width: 50%; /* Занимает половину доступной ширины */
+        }
+    }
+    
+    /* Общие стили для десктопных устройств */
+    @media only screen and (min-width: 1025px) {
+        .product-images {
+            height: 100%;
+            width: 50%; /* Занимает 30% доступной ширины */
+        }
+        .product-details {
+            margin-left: 10px;
+            width: 50%; /* Занимает половину доступной ширины */
+        }
+
+    }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoffmag</title>
+    <link rel = "stylesheet" href="header-footer.css">
+    <link rel = "stylesheet" href="info-style.css">
+</head>
+<body>
+    <script src = "hamburger.js"></script>
+    <header>
+        <div class = "title">
+            <a href = "index.html">Hoffmag</a>
+            </div>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+        </div>
+        <ul class = "nav">
+            <li>
+                <a href = "index.html">Главная</a>
+            </li>
+            <li>
+                <a href = "korzina.html">Корзина</a>
+            </li>
+            <li>
+                <a href = "Loved.html">Избранное</a>
+            </li>
+            <li>
+                <a href = "faq.html">О нас</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="product-info">
+            <div class="product-images">
+                <div class="product-image-1">
+                    <img src="./sourses/info3.1.jpg" alt="Футболка" onclick="openModal(this)">
+                </div>
+                <div class="product-image-2-3">
+                    <img src="./sourses/info3.2.jpg" alt="Футболка" onclick="openModal(this)">
+                    <img src="./sourses/info3.3.jpg" alt="Футболка" onclick="openModal(this)">
+                </div>
+            </div>
+            
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img src="" id="modalImg" alt="Футболка">
+            </div>
+            
+            <div class="product-details">
+                <h1>Рубашка</h1>
+                <ul>
+                    <li><span>Состав, %:</span> Хлопок - 100%</li>
+                    <li><span>Размер товара на модели:</span> XS INT</li>
+                    <li><span>Параметры модели:</span> 81-60-89</li>
+                    <li><span>Рост модели на фото:</span> 176 см</li>
+                    <li><span>Длина (см):</span> 71 см</li>
+                    <li><span>Длина рукава (см):</span> 65 см</li>
+                    <li><span>Сезон:</span> Мульти</li>
+                    <li><span>Цвет:</span> Белый</li>
+                </ul>
+                
+                <p>Женская рубашка — это стильный и универсальный предмет гардероба, который можно носить в самых разных ситуациях. Обычно она имеет пуговицы на передней части и воротник, может быть с длинными или короткими рукавами, и бывает из различных материалов, таких как хлопок, шелк, лен или полиэстер.</p>
+
+<h3>С чем носят женскую рубашку:</h3>
+<ul class="descripion">
+    <li><span>Офисный стиль:</span> С классическими брюками, юбками-карандашами или деловыми костюмами.</li>
+    <li><span>Повседневный образ:</span> С джинсами, шортами или леггинсами.</li>
+    <li><span>Слоистые комплекты:</span> Под свитерами, жилетами или жакетами.</li>
+    <li><span>Летний образ:</span> С шортами или легкими юбками, иногда с завязанными концами на талии.</li>
+</ul>
+
+<h3>Плюсы приобретения женской рубашки:</h3>
+<ul class="descripion">
+    <li><span>Универсальность:</span> Подходит для различных случаев — от офиса до повседневных мероприятий.</li>
+    <li><span>Элегантность:</span> Добавляет образу аккуратности и стиля, подчеркивая женственность.</li>
+    <li><span>Комбинирование:</span> Легко сочетается с различными элементами гардероба, создавая разнообразные образы.</li>
+    <li><span>Удобство:</span> Доступны модели из дышащих и комфортных материалов, что делает рубашку приятной в носке.</li>
+    <li><span>Долговечность:</span> Качественные рубашки из хороших материалов служат долго и сохраняют привлекательный вид после множества стирок.</li>
+</ul>
+
+<p>Женская рубашка — это незаменимый элемент гардероба, который позволяет создавать как строгие деловые, так и расслабленные повседневные образы.</p>
+
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Покупателям</h2>
+                <ul>
+                    <li><a href = "faq.html">Часто задаваемые вопросы</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Мы в соцсетях</h2>
+                <ul>
+                    <li><a href = "https://vk.com/feed">Вконтакте</a></li>
+                    <li><a href = "https://www.instagram.com/it.belstu/">Инстаграм</a></li>
+                    <li><a href = "https://telegram.org/">Телеграм</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Меню</h2>
+                <ul>
+                    <li><a href = "index.html">Главная</a></li>
+                    <li><a href = "Korzina.html">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" data-section="4">
+            </div>
+        </div>
+</footer>
+<script src = "schet.js"></script>
+<script src = "xml.js"></script>
+</body>
+</html>

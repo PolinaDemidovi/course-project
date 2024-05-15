@@ -1,0 +1,61 @@
+main h2 {
+    position: relative;
+    font-family: 'Koulen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #171A1A;
+    mix-blend-mode: plus-darker;
+}
+
+.faq {
+    width: 80%; /* Ширина контейнера */
+    margin: 0 auto; /* Устанавливаем автоматичесные отступы по бокам для центрирования */
+    text-align: center; /* Выравниваем текст по центру в контейнере */
+}
+
+.question {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.question-title {
+    color: #F88500; /* Оранжевый цвет для вопросов */
+}
+
+.answer {
+    display: none; /* Скрываем ответы по умолчанию */
+}
+
+.answer.show {
+    display: block; /* Показываем ответ при активации */
+}
+
+.info {
+    width: 80%; /* Ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера по горизонтали */
+    text-align: justify; /* Выравнивание текста по ширине */
+    line-height: 1.6; /* Межстрочный интервал */
+}
+
+.info p {
+    font-size: 30px; /* Размер шрифта для десктопных устройств */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Стили для планшетных устройств */
+    .info p {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Стили для мобильных устройств */
+    .info p {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,171 @@
+/* Default styles */
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.info-container2 {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+main h2 {
+    position: relative;
+    font-family: 'Koulen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #171A1A;
+    mix-blend-mode: plus-darker;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 767px) {
+    .catalog {
+        display: flex;
+        flex-direction: column; /* Переключаем на вертикальное расположение элементов */
+    }
+
+    .item {
+        margin-bottom: 20px; /* Добавляем отступ снизу между элементами */
+    }
+
+    .item img {
+        width: 100%; /* Заполняем доступное пространство */
+    }
+
+    .text {
+        text-align: center; /* Выравниваем текст по центру */
+    }
+
+    .cost {
+        font-size: 16px; /* Уменьшаем размер шрифта для цены */
+    }
+
+    .sizes {
+        margin-bottom: 10px; /* Добавляем отступ снизу между размерами и типом товара */
+    }
+
+    .bean-button {
+        margin-top: 10px; /* Добавляем отступ сверху для кнопки */
+    }
+}
+
+
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack image and text vertically */
+    margin-left: 11px;
+    flex-basis: 24%;
+    text-align: center;
+}
+
+.item img {
+    width: 80%;
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space between image and text */
+    transition: transform 0.3s ease; /* Добавляем плавный переход для увеличения */
+}
+
+.item img:hover {
+    transform: scale(1.1); /* Увеличиваем размер картинки на 10% при наведении */
+
+}
+
+.text {
+    padding: 15px; /* Add padding for spacing */
+    transition: background-color 0.3s ease; /* Добавляем плавный переход для подсветки */
+}
+
+
+
+.text .info-container,
+.text .info-container2 {
+    margin-bottom: 10px; /* Add space between info containers */
+}
+
+.cost {
+    font-size: 18px; /* Adjust font size for cost */
+    font-weight: bold; /* Make cost bold */
+}
+
+.sizes {
+    list-style-type: none; /* Remove bullet points from sizes */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.size {
+    display: inline-block; /* Display sizes inline */
+    margin-right: 5px; /* Add space between sizes */
+    cursor: pointer; /* Add cursor pointer for interaction */
+}
+
+.size.active {
+    background-color: orange;
+}
+
+.bean-button {
+    background-color: #FFA500; /* Orange background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding to button */
+    cursor: pointer; /* Add cursor pointer for interaction */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add border radius for button */
+    margin-top: 10px; /* Add margin to separate button from other elements */
+}
+
+.bean-button:hover {
+    background-color: #FFD700; /* Change background color on hover */
+}
+
+/* Liked button */
+.text svg {
+    width: 41px;
+    height: 33px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Liked button animation */
+.text svg rect {
+    transition: fill 0.3s ease-in-out;
+}
+
+/* Liked button animation on hover */
+.text svg:hover rect {
+    fill: #FF6347; /* Change fill color on hover */
+}
+
+#hidden-item {
+    display: none;
+}
+
+#showMoreButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#showMoreButton:hover {
+    background-color: #FFD700;
+}

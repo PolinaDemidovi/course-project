@@ -1,0 +1,239 @@
+body {
+    max-height: 100%;
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    overflow-x: hidden;
+
+}
+main {
+    margin-top:154px;
+    margin-bottom: 100px;
+}
+
+
+header{
+position: relative;
+width: 100%;
+height: 154px;
+left: 0px;
+top: 0px;
+background-color: #202328;
+z-index: 10;
+}
+
+.title{
+position: absolute;
+width: 201px;
+height: 63px;
+left: 70px;
+top: 45px;
+
+font-family: 'Inder';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 62px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+a:hover{
+    text-shadow: 0 0 50px #fff,
+               
+                0 0 12px #fff;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.8s ease;
+}
+
+/* Frame 2 */
+
+/* Auto layout */
+.nav {
+    position: absolute;
+    margin-top: 70px; /* Adjust as needed */
+    right: 60px; /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    gap: 20px; /* Increase the gap between buttons */
+    list-style-type: none;
+
+}
+
+/* Главная */
+.nav li {
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-family: 'Koulen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+
+}
+
+li a {
+    color:#F88500;
+}
+
+
+/* Footer*/
+
+
+/* Footer styles */
+
+footer {
+    background-color: #202328;
+    color: #FFFFFF;
+    padding: 40px 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Change to column layout on smaller screens */
+    justify-content: space-between;
+    padding: 0 20px; /* Adjust padding for smaller screens */
+}
+
+.footer-section {
+    width: 100%; /* Occupy full width on smaller screens */
+    margin-bottom: 20px; /* Add some spacing between sections */
+}
+
+.footer-section h2 {
+    font-family: 'Koulen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: #F88500;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* Media query for responsive design */
+
+@media only screen and (min-width: 768px) {
+   
+    
+    .footer-content {
+        flex-direction: row; 
+    }
+    
+    .footer-section {
+        width: 25%; 
+        margin-bottom: 0; 
+    }
+}
+
+
+/* Add hamburger menu styles */
+
+.menu-toggle {
+    display: none; /* Initially hide the menu toggle on larger screens */
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 6px 0;
+    transition: transform 0.3s ease;
+}
+
+.hamburger.active {
+    transform: rotate(45deg);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+    transform: translateY(-8px);
+}
+
+.hamburger::after {
+    transform: translateY(5px);
+}
+
+/* Media query for responsive design */
+
+@media only screen and (max-width: 768px) {
+    /* For tablets and smaller screens */
+
+    .menu-toggle {
+        display: block; /* Display the menu toggle on smaller screens */
+        cursor: pointer;
+    }
+    .title {
+        justify-content: flex-end;
+    }
+
+    .nav {
+        display: none; /* Hide the navigation links by default on smaller screens */
+    }
+
+    .nav.active {
+        display: flex; /* Display the navigation links when active (clicked) */
+        flex-direction: column;
+        background-color: #202328;
+        position: absolute;
+        top: 154px; /* Adjust as needed */
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        z-index: 9;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+}
+
+main h2 {
+    position: relative;
+    font-family: 'Koulen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #171A1A;
+    mix-blend-mode: plus-darker;
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoffmag</title>
+    <link rel = "stylesheet" href="header-footer.css">
+    <link rel = "stylesheet" href="info-style.css">
+</head>
+<body>
+    <script src = "hamburger.js"></script>
+    <header>
+        <div class = "title">
+            <a href = "index.html">Hoffmag</a>
+            </div>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+        </div>
+        <ul class = "nav">
+            <li>
+                <a href = "index.html">Главная</a>
+            </li>
+            <li>
+                <a href = "korzina.html">Корзина</a>
+            </li>
+            <li>
+                <a href = "Loved.html">Избранное</a>
+            </li>
+            <li>
+                <a href = "faq.html">О нас</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="product-info">
+            <div class="product-images">
+                <div class="product-image-1">
+                    <img src="./sourses/tovar1.jpg" alt="Футболка" onclick="openModal(this)">
+                </div>
+                <div class="product-image-2-3">
+                    <img src="./sourses/info2.jpg" alt="Футболка" onclick="openModal(this)">
+                    <img src="./sourses/info3.jpg" alt="Футболка" onclick="openModal(this)">
+                </div>
+            </div>
+            
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img src="./sourses/tovar1.jpg" id="modalImg" alt="Футболка">
+            </div>
+            
+            <div class="product-details">
+                <h1>Футболка</h1>
+                <ul>
+                    <li><span>Состав, %:</span> Хлопок - 100%</li>
+                    <li><span>Размер товара на модели:</span> S INT</li>
+                    <li><span>Параметры модели:</span> 80-60-87</li>
+                    <li><span>Рост модели на фото:</span> 175 см</li>
+                    <li><span>Длина (см):</span> 65 см</li>
+                    <li><span>Длина рукава (см):</span> 24 см</li>
+                    <li><span>Сезон:</span> Мульти</li>
+                    <li><span>Цвет:</span> Чёрный</li>
+                </ul>                
+                <p>Футболка — это универсальный предмет одежды с короткими рукавами и круглым или V-образным вырезом. Ее можно носить практически с любой одеждой, включая джинсы, шорты, юбки и брюки, что делает ее отличным выбором для повседневного образа.</p>
+
+                <h3>Плюсы приобретения футболки:</h3>
+                <ul class = "descripion">
+                    <li><span>Комфорт:</span> Футболки обычно изготавливаются из мягких и дышащих материалов, таких как хлопок, что делает их удобными для повседневной носки.</li>
+                    <li><span>Универсальность:</span> Подходит для различных ситуаций — от неформальных встреч до занятий спортом.</li>
+                    <li><span>Доступность:</span> Футболки бывают разных ценовых категорий, что позволяет найти вариант для любого бюджета.</li>
+                    <li><span>Разнообразие:</span> Широкий выбор цветов, дизайнов и принтов позволяет выразить индивидуальный стиль.</li>
+                    <li><span>Легкость в уходе:</span> Футболки легко стираются и быстро сохнут, что делает их практичными в использовании.</li>
+                </ul>
+            
+                <p>Футболка — это базовый элемент гардероба, который никогда не выйдет из моды благодаря своей простоте и функциональности.</p>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Покупателям</h2>
+                <ul>
+                    <li><a href = "faq.html">Часто задаваемые вопросы</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Мы в соцсетях</h2>
+                <ul>
+                    <li><a href = "https://vk.com/feed">Вконтакте</a></li>
+                    <li><a href = "https://www.instagram.com/it.belstu/">Инстаграм</a></li>
+                    <li><a href = "https://telegram.org/">Телеграм</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Меню</h2>
+                <ul>
+                    <li><a href = "index.html">Главная</a></li>
+                    <li><a href = "Korzina.html">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" data-section="4">
+            </div>
+        </div>
+</footer>
+<script src = "schet.js"></script>
+<script src = "xml.js"></script>
+</body>
+</html>
